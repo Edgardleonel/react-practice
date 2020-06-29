@@ -1,0 +1,131 @@
+
+.top-menu {
+    flex: 1;
+    display: flex;
+    padding: 0 26%;
+    li {
+        margin: 0 1%;
+        flex-direction: row;
+        flex: 1;
+        list-style: none;
+    }
+}
+
+.link-menu {
+    color: #FFF;
+    &.active, &:hover {
+        color: #d3a059;
+    }
+}
+
+.sub-content {
+    display: none;
+}
+
+ul.top-menu > li {
+    position: relative;
+    color: #fff;
+    padding: 1em 1.2em;
+    line-height: 1.2em;
+    vertical-align: middle;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.dropdown-content ul {
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0 !important;
+    li {
+        text-align: left;
+    }
+}
+
+.sub-menu.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    width: 80em;
+    position: fixed;
+    left: 50%;
+    top: 8%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding-bottom: 1.5em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content.small {
+    width: 15em;
+    font-size: 14px;
+    left: 52%;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+}
+  
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a, .submenu-label {
+    color: #18203e;
+}
+
+.submenu-label {
+    padding: 1em .75em;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+.dropdown-content li:hover {
+    background-color: rgba(211,160,89,.25);
+}
+
+.dropdown-content li:hover a {
+    color: #d3a059;
+}
+  
+.dropdown:hover .overlay {
+    display: block;
+}
+
+.mr-auto.mobile {
+    display: none;
+}
+
+.mr-auto.navbar-nav {
+    width: 100%;
+    padding: 0 25%;
+}
+
+
+@media (max-width: 1025px) {
+    .mr-auto.navbar-nav {
+        display: none;
+    }
+    .mr-auto.mobile {
+        display: block;
+        padding: 0;
+    }
+    
+}

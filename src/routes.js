@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Header from './header';
+import switchTeste from './switch';
 
 // import { Container } from './styles';
 
@@ -9,7 +9,7 @@ function Routes() {
     <>
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact component={Header}></Route>
+            <Route path="/" exact component={switchTeste}></Route>
         </Switch>
     </BrowserRouter>
     </>

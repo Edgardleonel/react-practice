@@ -1,0 +1,22 @@
+.pg_departament {
+    padding-top: 5em;
+}
+
+.MuiInput-underline:after {
+    border-bottom: 2px solid #d3a059 !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+    color: #d3a059 !important;
+}
+
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid #d3a059 !important;
+}
+
+.input_Search {
+    display: flex;
+    align-items: center;
+}
+

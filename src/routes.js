@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import departamento from './edega/departamento';
+import MenuRedux from './edega/MenuRedux';
 
 
 
@@ -9,7 +9,7 @@ function Routes() {
     <>
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact component={departamento}></Route>
+            <Route path="/" exact component={MenuRedux}></Route>
         </Switch>
     </BrowserRouter>
     </>

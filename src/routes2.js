@@ -1,19 +1,19 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Table from './table';
+import Home from './home';
 
 
 
-function Routes() {
+function Routes2() {
   return ( 
     <>
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact component={Table}></Route>
+            <Route path="/" exact component={Home}></Route>
         </Switch>
     </BrowserRouter>
     </>
   );
 }
 
-export default Routes;
+export default Routes2;

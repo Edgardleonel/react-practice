@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import {TableStyle} from './styles';
 
@@ -34,32 +34,28 @@ const paises = [
             'Itália', 
             'Itália',
             'Itália',
+            'Itália', 
+            'Itália',
+            'Itália',
          ]
       },
 ]
 
 
-
 function table() {
 
-
-    function renderTableData() {
-        return paises.map((col, index) => { 
-            return (
-                <td>
-                <th>{col.descricao}</th>
-                {col.lista.map(lista => (
-                   <div key={index}>             
-                        {lista}
-                    </div>
-                 ))}
-                 </td>
-            )
-        })
-    }
-
-
-
+function renderTableData() {
+    return (
+        <tr>
+            {paises.map((col, index) => (
+            <td key={index}>
+                <strong>{col.descricao}</strong> 
+                {col.lista.map((lista, index) => (<p key={index}>{lista}</p>))} 
+            </td>
+            ))}
+        </tr>
+    )
+}
   
   return (
     <>

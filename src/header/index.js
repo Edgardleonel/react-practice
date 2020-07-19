@@ -7,6 +7,7 @@ import Slide from '../slide';
 import  './styles.scss';
 
 function header() {
+
   return (
       <>
       <header className="Header-new ">

@@ -9,11 +9,13 @@ import store from './store';
 import { BrowserRouter } from 'react-router-dom';
 import api from './services/api';
 import {ThemeProvider} from 'styled-components';
+import Load from './load';
 
 
  function App(){
    const [theme, setTheme] = useState([]);
    const [template, setTemplate] = useState('');
+   const [loading, setLoading] = useState(true);
   
 useEffect(() => {
   async function load() {
@@ -31,7 +33,11 @@ useEffect(() => {
   const result = response.data;
   const active = result.filter(r => r.isActive === true).map(item => item.nome);
   console.log('active', ...active)
-  setTemplate(...active);
+      if(result.length) {
+        setLoading(false)
+      } 
+        setTemplate(...active);
+      
   } 
   load();
 }, [])
@@ -50,6 +56,7 @@ function validarRoute() {
 
   return  (
     <> 
+      {loading ? <Load /> : false}
       <Provider store={store}>
         <BrowserRouter>
           <ThemeProvider theme={{...theme}}>

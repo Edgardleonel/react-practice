@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SlideGrow from '../slideGrow';
+import Slide from '../slide';
 
 import  './styles.scss';
 
@@ -8,16 +10,11 @@ function header() {
   return (
       <>
       <header className="Header-new ">
-        <Container>
+        <Container fluid>
             <div className="Header__content">
-                <div class="content">
-                    <div className="Media">
-                        <div className="figure">
-                            <img src="https://www.edega.com.br/assets/images/logo.png?v3" alt="Logo Edega" />                  
-                        </div>
-                    </div>
+                <div className="content">
                     <div className="Media_content">
-                        <div class="Menu_content">
+                        <div className="Menu_content">
                             <ul>
                                 <li>
                                     <Link className="MainNavigation__item" >Loja Virtual</Link>
@@ -43,8 +40,10 @@ function header() {
 
 
         <div className="Media_body">
-            <Container>
-                <div class="Menu_body">
+            <Container fluid>
+            <div className="content_Body">
+            <img style={{height: '45px', filter: 'grayscale(1) brightness(2)'}} src="https://www.edega.com.br/assets/images/logo.png?v3" />
+                <div className="Menu_body">
                     <ul>
                         <li>
                             <Link className="MainNavigation" >Vinhos</Link>
@@ -72,9 +71,12 @@ function header() {
                         </li>
                     </ul>
                 </div>
+            </div>
             </Container>
         </div>
-
+        <SlideGrow />
+        <Slide />
+        <SlideGrow />
     </>
   );
 }

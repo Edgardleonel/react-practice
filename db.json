@@ -69,11 +69,11 @@
     "template": [
       {
         "nome": "Piqueri",
-        "isActive": true
+        "isActive": false
       },
       {
         "nome": "Edega",
-        "isActive": false
+        "isActive": true
       }
     ]
     

@@ -2,13 +2,14 @@
 import React, {useState} from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import './styles.scss';
+import logo from '../assets/logo.png'
 
 function HomePage() {
     const [hamburger, sethamburger] = useState('')
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="#home">
-        <img style={{height: "60px", filter: "grayscale(1) brightness(2)"}} src="https://www.edega.com.br/assets/images/logo.png?v3" alt="" />
+        <img style={{height: '50px'}} src={logo} alt="" />
         </Navbar.Brand>
         <div className={`hamburger hamburger--3dx ${hamburger}`} onClick={() => hamburger === 'is-active' ? sethamburger('') : sethamburger('is-active') }>
             <div className="hamburger-box">

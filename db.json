@@ -66,6 +66,12 @@
           "primary": "#000",
           "secondary": "red"
         },
+
+    "themeConfig": 
+    {
+      "primary": "blue",
+      "secondary": "red"
+    },
     "template": [
       {
         "nome": "Piqueri",

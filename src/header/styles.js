@@ -1,3 +1,8 @@
+import styled from 'styled-components';
+
+
+export const HeaderStyles = styled.div`
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 
 body, html {
@@ -8,7 +13,7 @@ body, html {
     height: 2em;
     width: 100%;
     position: fixed;
-    background-color: #18203e;
+    background-color: ${props => props.theme.primary};
     color:#FFF;
     z-index: 999;
     box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.07);
@@ -191,6 +196,10 @@ body, html {
         padding: 0 .35rem !important;
     }
 }
+`;
+
+
+
        
 
 

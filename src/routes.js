@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Table from './table';
+import Templates from './templates';
 
 
 
@@ -9,7 +9,7 @@ function Routes() {
     <>
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact component={Table}></Route>
+            <Route path="/" exact component={Templates}></Route>
         </Switch>
     </BrowserRouter>
     </>

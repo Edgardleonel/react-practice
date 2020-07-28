@@ -22,7 +22,7 @@ useEffect(() => {
   const response = await api.get('/theme');
   const result = response.data;
   setTheme(result);
-  } 
+} 
   load();
 }, [])
 
@@ -37,14 +37,13 @@ useEffect(() => {
         setLoading(false)
       } 
         setTemplate(...active);
-      
   } 
   load();
 }, [])
 
 
 function validarRoute() {
-  const route = template;
+  const route = 'Piqueri';
   switch (route) {
   case 'Piqueri':
     return (<Routes />)
@@ -56,7 +55,7 @@ function validarRoute() {
 
   return  (
     <> 
-      {loading ? <Load /> : false}
+      {/* {loading ? <Load /> : false} */}
       <Provider store={store}>
         <BrowserRouter>
           <ThemeProvider theme={{...theme}}>

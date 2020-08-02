@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Templates from './templates';
+import Page from './edega/meusPedidos';
 
 
 
@@ -9,7 +9,7 @@ function Routes() {
     <>
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact component={Templates}></Route>
+            <Route path="/" exact component={Page}></Route>
         </Switch>
     </BrowserRouter>
     </>

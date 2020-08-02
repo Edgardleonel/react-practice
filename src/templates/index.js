@@ -9,11 +9,12 @@ const theme = {
 
 
   const componentes = [
-  'About',
-  'Selecao',
-  'Promocao',
-  'Footer',
   'Header',
+  'About',
+  'Promocao',
+  'Selecao',
+  'Footer',
+
   ]
 
   const Header = () => (
